@@ -16,6 +16,8 @@ if (has("termguicolors"))
 endif
 syntax enable
 colorscheme dracula
+" Leader configuration
+let mapleader = "."
 " File Explorer
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
@@ -39,14 +41,14 @@ function! OpenTerminal()
 endfunction
 nnoremap <c-n> :call OpenTerminal()<CR>
 " use alt+hjkl to move between split/vsplit panels
-tnoremap <A-h> <C-\><C-n><C-w>h
-tnoremap <A-j> <C-\><C-n><C-w>j
-tnoremap <A-k> <C-\><C-n><C-w>k
-tnoremap <A-l> <C-\><C-n><C-w>l
-nnoremap <A-h> <C-w>h
-nnoremap <A-j> <C-w>j
-nnoremap <A-k> <C-w>k
-nnoremap <A-l> <C-w>l
+tnoremap <Leader>h <C-\><C-n><C-w>h
+tnoremap <Leader>j <C-\><C-n><C-w>j
+tnoremap <Leader>k <C-\><C-n><C-w>k
+tnoremap <Leader>l <C-\><C-n><C-w>l
+nnoremap <Leader>h <C-w>h
+nnoremap <Leader>j <C-w>j
+nnoremap <Leader>k <C-w>k
+nnoremap <Leader>l <C-w>l
 " Now, to search for a file, press Ctrl+P , search for the file you’re looking for, and press:
 " CTRL+T to open it in a new tab.
 " CTRL+S to open below (split view).
