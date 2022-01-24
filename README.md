@@ -1,4 +1,9 @@
 # learning-vim
 My Vim journey.
 
-Mac Config Path = /Users/gregorio.costa/.config/nvim
+## Config paths
+Mac = `/Users/gregorio.costa/.config/nvim`
+
+## How to resources
+
+- [ ] [How to rename a variable](https://vi.stackexchange.com/questions/18004/renaming-variables)
