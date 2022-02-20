@@ -72,3 +72,7 @@ set smartindent
 set tabstop=2
 set expandtab
 set shiftwidth=2
+"  Finding files 
+nnoremap <silent> <C-f> :Files<CR>
+"  Finding in files
+nnoremap <silent> <Leader>f :Ag<CR>
