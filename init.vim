@@ -9,6 +9,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'leafgarland/typescript-vim'
   Plug 'peitalin/vim-jsx-typescript'
+  Plug 'liuchengxu/vim-which-key'
 call plug#end()"Config Section
 " Theme
 if (has("termguicolors"))
@@ -17,7 +18,7 @@ endif
 syntax enable
 colorscheme dracula
 " Leader configuration
-let mapleader = "."
+let mapleader = ","
 " File Explorer
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
@@ -25,8 +26,6 @@ let g:NERDTreeIgnore = []
 let g:NERDTreeStatusline = ''
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-" Toggle
-nnoremap <silent> <C-b> :NERDTreeToggle<CR>
 " open new split panes to right and below
 set splitright
 set splitbelow
@@ -49,6 +48,10 @@ nnoremap <Leader>h <C-w>h
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>k <C-w>k
 nnoremap <Leader>l <C-w>l
+" NerdTree Revel File
+nmap ,m :NERDTreeToggle<CR>
+nmap ,n :NERDTreeFind<CR>
+
 " Now, to search for a file, press Ctrl+P , search for the file you’re looking for, and press:
 " CTRL+T to open it in a new tab.
 " CTRL+S to open below (split view).
@@ -76,3 +79,10 @@ set shiftwidth=2
 nnoremap <silent> <C-f> :Files<CR>
 "  Finding in files
 nnoremap <silent> <Leader>f :Ag<CR>
+" WHichKey Config
+" Define prefix dictionary
+call which_key#register(',', "g:which_key_map")
+nnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
+vnoremap <silent> <leader> :<c-u>WhichKeyVisual ','<CR>
+let g:which_key_map =  {}
+
