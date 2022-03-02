@@ -11,3 +11,5 @@ My Vim journey.
 ## To try out
 
 - [ ] https://github.com/folke/which-key.nvim
+- [ ] https://www.amazon.co.uk/Practical-Vim-Second-Speed-Thought/dp/1680501275
+- [ ] https://www.amazon.co.uk/Modern-Vim-Drew-Neil/dp/168050262X/ref=pd_bxgy_2/258-9807863[…]7a-aee0-f3dd4841f208&pd_rd_wg=6lP69&pd_rd_i=168050262X&psc=1
