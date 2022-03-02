@@ -7,3 +7,7 @@ My Vim journey.
 ## How to resources
 
 - [ ] [How to rename a variable](https://vi.stackexchange.com/questions/18004/renaming-variables)
+
+## To try out
+
+- [ ] https://github.com/folke/which-key.nvim
