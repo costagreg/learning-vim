@@ -19,3 +19,11 @@ My Vim journey.
 - [ ] :WhichKey <Leader>
 - [ ] :Maps - shows current mapps visually
 - [ ] :PlugInstall - install newvim plugin
+
+## ShortCuts
+
+### Navigation
+- [ ] `Shift + H/M/L` to jumb top, middle, bottom of the screen
+
+### NerdTree
+- [ ] `m` create/edit/mandage a node
