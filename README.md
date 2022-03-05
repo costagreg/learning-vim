@@ -26,4 +26,5 @@ My Vim journey.
 - [ ] `Shift + H/M/L` to jumb top, middle, bottom of the screen
 
 ### NerdTree
-- [ ] `m` create/edit/mandage a node
+- [ ] `m` create/edit/manage a node
+- [ ] `o` open a folder
