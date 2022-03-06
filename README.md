@@ -22,6 +22,9 @@ My Vim journey.
 
 ## ShortCuts
 
+### Manipulation
+- [ ] `Capital J` bring next line to current line
+ 
 ### Navigation
 - [ ] `Shift + H/M/L` to jumb top, middle, bottom of the screen
 - [ ] `Ctrl + J/H` to select elements from pop up (e.g. autocomplete)
@@ -32,3 +35,8 @@ My Vim journey.
 
 ### Rearange splits
 - [ ] `CTRL-W K` (i.e., Ctrl+W Shift+K), with H = left, J = bottom, K = top, L = right Move split to different position
+
+### Registers
+- [ ] `:reg` see register states
+- [ ] `"0p` paster from register 0 (visual mode)
+- [ ] `ctrl+r 0` paste from register 0(insert mode)
