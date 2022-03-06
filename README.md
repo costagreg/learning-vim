@@ -24,6 +24,7 @@ My Vim journey.
 
 ### Navigation
 - [ ] `Shift + H/M/L` to jumb top, middle, bottom of the screen
+- [ ] `Ctrl + J/H' to select elements from pop up (e.g. autocomplete)
 
 ### NerdTree
 - [ ] `m` create/edit/manage a node
