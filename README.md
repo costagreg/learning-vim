@@ -28,3 +28,6 @@ My Vim journey.
 ### NerdTree
 - [ ] `m` create/edit/manage a node
 - [ ] `o` open a folder
+
+### Rearange splits
+- [ ] `CTRL-W K` (i.e., Ctrl+W Shift+K), with H = left, J = bottom, K = top, L = right Move split to different position
