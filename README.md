@@ -24,6 +24,7 @@ My Vim journey.
 
 ### Manipulation
 - [ ] `Capital J` bring next line to current line
+- [ ] **Intent multiple lines**: `V`, select the lines, `>`. Use `.` to repeat. 
  
 ### Navigation
 - [ ] `Shift + H/M/L` to jumb top, middle, bottom of the screen
