@@ -10,6 +10,9 @@ call plug#begin("~/.vim/plugged")
   Plug 'leafgarland/typescript-vim'
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'liuchengxu/vim-which-key'
+  Plug 'jparise/vim-graphql'
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-rhubarb'
 call plug#end()"Config Section
 " Theme
 if (has("termguicolors"))
@@ -80,9 +83,17 @@ nnoremap <silent> <C-f> :Files<CR>
 "  Finding in files
 nnoremap <silent> <Leader>f :Ag<CR>
 " WHichKey Config
-" Define prefix dictionary
-call which_key#register(',', "g:which_key_map")
+" Define prefix dictionary for leader
+call which_key#register(',', "g:which_key_map_leader")
 nnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
 vnoremap <silent> <leader> :<c-u>WhichKeyVisual ','<CR>
-let g:which_key_map =  {}
+let g:which_key_map_leader =  {}
+" Autocomplete JS
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+" Shortcuts to select items in the autocompletition pop up
+inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<CR>"
+inoremap <expr> <Esc> pumvisible() ? "\<C-e>" : "\<Esc>"
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<Down>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<Up>"
+
 
