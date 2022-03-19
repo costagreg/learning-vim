@@ -26,12 +26,16 @@ My Vim journey.
 - [ ] `Capital J` bring next line to current line
 - [ ] **Intent multiple lines**: `V`, select the lines, `>`. Use `.` to repeat. 
 - [ ] Delete till a `"`: `ft"`
+- [ ] Rename by COC - `Leader + rn`
+- [ ] Fix by COC - `Loader + do`
+
  
 ### Navigation
 - [ ] `Shift + H/M/L` to jumb top, middle, bottom of the screen
 - [ ] `Ctrl + J/H` to select elements from pop up (e.g. autocomplete)
 - [ ] After you search `f"`, you can go to the next `"` with `;`
-
+- [ ] Go next error by COC `[g` or previus `]g`
+ 
 ### NerdTree
 - [ ] `m` create/edit/manage a node
 - [ ] `o` open a folder
