@@ -16,6 +16,8 @@ call plug#begin("~/.vim/plugged")
   Plug 'yuezk/vim-js'
   Plug 'HerringtonDarkholme/yats.vim'
   Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'neoclide/coc-eslint'
+  Plug 'neoclide/coc-prettier'
 call plug#end()"Config Section
 " Theme
 if (has("termguicolors"))
@@ -79,7 +81,7 @@ let g:fzf_action = {
   \}
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 " Syntax Higlight
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-yaml']
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-eslint', 'coc-prettier', 'coc-tsserver', 'coc-yaml']
 " Keymap to move between tabs
 map  <C-l> :tabn<CR>
 map  <C-h> :tabp<CR>
@@ -116,3 +118,9 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 let g:vim_jsx_pretty_colorful_config = 1 " default 0
+" Show doc on hover
+nnoremap <silent> K :call CocAction('doHover')<CR>
+" rename by COC
+nmap <leader>rn <Plug>(coc-rename)
+" fix by COC
+nmap <leader>do <Plug>(coc-codeaction)

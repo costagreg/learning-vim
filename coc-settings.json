@@ -1,15 +1,28 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "json", "javascriptreact", "typescript.tsx"],
-  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "javascriptreact",
+    "typescript.tsx"
+  ],
+  "eslint.filetypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact",
+    "typescript.tsx"
+  ],
   "coc.preferences.diagnostic.virtualText": true,
   "languageserver": {
-      "golang": {
-        "command": "gopls",
-        "rootPatterns": ["go.mod"],
-        "filetypes": ["go"]
-      }
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "filetypes": ["go"]
+    }
   },
   "yaml.schemas": {
-      "kubernetes": "/*.yaml"
+    "kubernetes": "/*.yaml"
   }
 }
