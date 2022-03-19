@@ -13,6 +13,9 @@ call plug#begin("~/.vim/plugged")
   Plug 'jparise/vim-graphql'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-rhubarb'
+  Plug 'yuezk/vim-js'
+  Plug 'HerringtonDarkholme/yats.vim'
+  Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()"Config Section
 " Theme
 if (has("termguicolors"))
@@ -20,7 +23,15 @@ if (has("termguicolors"))
 endif
 syntax enable
 colorscheme dracula
-" Leader configuration
+" set filetypes as typescriptreact
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact" Leader configuration
+" theme for react syntax highlight orange
+hi tsxCloseString guifg=#F99575
+hi tsxCloseTag guifg=#F99575
+hi tsxCloseTagName guifg=#F99575
+hi tsxAttributeBraces guifg=#F99575
+hi tsxEqual guifg=#F99575
+
 let mapleader = ","
 " File Explorer
 let g:NERDTreeShowHidden = 1
@@ -101,4 +112,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
+let g:vim_jsx_pretty_colorful_config = 1 " default 0
