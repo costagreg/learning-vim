@@ -18,6 +18,8 @@ call plug#begin("~/.vim/plugged")
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'neoclide/coc-eslint'
   Plug 'neoclide/coc-prettier'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'lewis6991/gitsigns.nvim'
 call plug#end()"Config Section
 " Theme
 if (has("termguicolors"))
@@ -124,3 +126,6 @@ nnoremap <silent> K :call CocAction('doHover')<CR>
 nmap <leader>rn <Plug>(coc-rename)
 " fix by COC
 nmap <leader>do <Plug>(coc-codeaction)
+
+lua require('gitsigns').setup()
+
