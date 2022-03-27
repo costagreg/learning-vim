@@ -20,8 +20,10 @@ call plug#begin("~/.vim/plugged")
   Plug 'neoclide/coc-prettier'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'lewis6991/gitsigns.nvim'
+  Plug 'ryanoasis/vim-devicons'
 call plug#end()"Config Section
 " Theme
+set encoding=UTF-8
 if (has("termguicolors"))
  set termguicolors
 endif
@@ -118,6 +120,9 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> gds :call CocAction('jumpDefinition', 'split')<CR>
+nmap <silent> gdv :call CocAction('jumpDefinition', 'vsplit')<CR>
+nmap <silent> gdt :call CocAction('jumpDefinition', 'tabe')<CR>
 
 let g:vim_jsx_pretty_colorful_config = 1 " default 0
 " Show doc on hover
