@@ -21,6 +21,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'nvim-lua/plenary.nvim'
   Plug 'lewis6991/gitsigns.nvim'
   Plug 'ryanoasis/vim-devicons'
+  Plug 'easymotion/vim-easymotion'
 call plug#end()"Config Section
 " Theme
 set encoding=UTF-8
@@ -132,5 +133,21 @@ nmap <leader>rn <Plug>(coc-rename)
 " fix by COC
 nmap <leader>do <Plug>(coc-codeaction)
 
+" EasyMotion
+" <Leader>f{char} to move to {char}
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+
+" s{char}{char} to move to {char}{char}
+nmap s <Plug>(easymotion-overwin-f2)
+
+" Move to line
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
 lua require('gitsigns').setup()
+
 
