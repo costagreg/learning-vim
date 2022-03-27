@@ -18,10 +18,12 @@ call plug#begin("~/.vim/plugged")
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'neoclide/coc-eslint'
   Plug 'neoclide/coc-prettier'
-  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-lnohlsearchua/plenary.nvim'
   Plug 'lewis6991/gitsigns.nvim'
   Plug 'ryanoasis/vim-devicons'
   Plug 'easymotion/vim-easymotion'
+  Plug 'petertriho/nvim-scrollbar'
+  Plug 'kevinhwang91/nvim-hlslens'
 call plug#end()"Config Section
 " Theme
 set encoding=UTF-8
@@ -148,6 +150,11 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
-lua require('gitsigns').setup()
 
+" hlslens
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l> 
+
+lua require('gitsigns').setup()
+lua require('scrollbar').setup()
+lua require("scrollbar.handlers.search").setup()
 
