@@ -35,6 +35,7 @@ My Vim journey.
 - [ ] `Ctrl + J/H` to select elements from pop up (e.g. autocomplete)
 - [ ] After you search `f"`, you can go to the next `"` with `;`
 - [ ] Go next error by COC `[g` or previus `]g`
+- [ ] Go to n split: ``n ctrl-w ctrl-w``
  
 ### NerdTree
 - [ ] `m` create/edit/manage a node
