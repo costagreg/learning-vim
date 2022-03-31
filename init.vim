@@ -71,6 +71,11 @@ nnoremap <Leader>h <C-w>h
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>k <C-w>k
 nnoremap <Leader>l <C-w>l
+" user leader numbers to go to split number
+nnoremap <Leader>1 1 <C-w><C-w>
+nnoremap <Leader>2 2 <C-w><C-w>
+nnoremap <Leader>3 3 <C-w><C-w>
+nnoremap <Leader>4 4 <C-w><C-w>
 " NerdTree Revel File
 nmap ,m :NERDTreeToggle<CR>
 nmap ,n :NERDTreeFind<CR>
