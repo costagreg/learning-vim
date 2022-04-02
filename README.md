@@ -28,6 +28,7 @@ My Vim journey.
 - [ ] Delete till a `"`: `ft"`
 - [ ] Rename by COC - `Leader + rn`
 - [ ] Fix by COC - `Loader + do`
+- [ ] Get a diff from two splits: Open the two files, and run ``:diffthis`` in both split
 
  
 ### Navigation
