@@ -6,6 +6,7 @@ My Vim journey.
 - [ ] Ubuntu = `/home/greg/.config/nvim`
 ## How to resources
 
+- [ ] https://www.barbarianmeetscoding.com/: Vim for Visual code full tutorial
 - [ ] [How to rename a variable](https://vi.stackexchange.com/questions/18004/renaming-variables)
 
 ## To try out
