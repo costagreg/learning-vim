@@ -9,6 +9,7 @@ My Vim journey.
 - [ ] https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/dedication
 - [ ] https://www.barbarianmeetscoding.com/: Vim for Visual code full tutorial
 - [ ] [How to rename a variable](https://vi.stackexchange.com/questions/18004/renaming-variables)
+- [ ] Use Vim in bash
 
 ## To try out
 
