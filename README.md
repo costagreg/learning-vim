@@ -9,7 +9,7 @@ My Vim journey.
 - [ ] https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/dedication
 - [ ] https://www.barbarianmeetscoding.com/: Vim for Visual code full tutorial
 - [ ] [How to rename a variable](https://vi.stackexchange.com/questions/18004/renaming-variables)
-- [ ] Use Vim in bash
+- [ ] [Use Vim in bash](https://superuser.com/questions/1360220/is-it-possible-to-use-vim-key-bindings-in-iterm2)
 
 ## To try out
 
